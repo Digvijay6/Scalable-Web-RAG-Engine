@@ -6,13 +6,13 @@ The system is designed to asynchronously ingest content from any URL, process it
 
 -----
 
-## 🎥 Demo Video
+##  Demo Video
 
 **[Watch the Demo Video Here](https://drive.google.com/drive/folders/1DR8EXd6e1NON7G8JjsPY3Z8qLDf75vt_?usp=sharing)**
 
 -----
 
-## 🏛️ System Architecture
+##  System Architecture
 
 The system is designed as a set of decoupled microservices that communicate via a message broker (Redis). This ensures that the user-facing API remains fast and responsive, regardless of how long the web scraping and embedding process takes.
 
@@ -46,7 +46,7 @@ The system is designed as a set of decoupled microservices that communicate via 
 
 -----
 
-## 🚀 Technology Stack & Justification
+##  Technology Stack & Justification
 
 | Technology             | Role                 | Justification                                                                                                                                                 |
 | :--------------------- | :------------------- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -61,7 +61,7 @@ The system is designed as a set of decoupled microservices that communicate via 
 
 -----
 
-## 🗃️ Database Schema
+##  Database Schema
 
 The metadata store uses a single SQLAlchemy table, `ingestion_jobs`, to track the status of each URL.
 
@@ -76,7 +76,7 @@ The metadata store uses a single SQLAlchemy table, `ingestion_jobs`, to track th
 
 -----
 
-## 📖 API Documentation
+##  API Documentation
 
 The API is fully documented and testable at `http://127.0.0.1:8000/docs` (via OpenAPI/Swagger).
 
@@ -141,7 +141,7 @@ Asks a question and gets a grounded answer from the ingested content.
 
 -----
 
-## 🏁 Setup & Running Instructions
+##  Setup & Running Instructions
 
 ### Prerequisites
 
@@ -194,7 +194,7 @@ This starts the user-facing API on http://127.0.0.1:8000.
 
 uvicorn main:app --reload
 ```
-## 3. Test with the API
+### 3. Test with the API
 Your system is now fully operational.
 
 Go to: http://127.0.0.1:8000/docs in your browser.
